@@ -25,7 +25,12 @@ class RecipientRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name' => 'required|min:2|max:255',
+            'contact' => 'required|numeric',
+            'blood_group' => 'required|in:A+,A-,B+,B-,AB+,AB-,O+,O-',
+            'address' => 'required|min:5|max:255',
+            'medical_notes' => 'nullable|string|max:1000',
+            'request_timestamp' => 'nullable|date'
         ];
     }
 

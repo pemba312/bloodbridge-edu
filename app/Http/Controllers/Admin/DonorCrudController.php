@@ -43,20 +43,12 @@ class DonorCrudController extends CrudController
         CRUD::column('blood_type');
         CRUD::column('total_donations');
         CRUD::column('contact');
+        CRUD::column('user_id');
         CRUD::column('latitude');
         CRUD::column('longitude');
         CRUD::column('is_available');
         CRUD::column('health_status');
         CRUD::column('last_donation_date');
-        CRUD::column('user_id');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
-        CRUD::column('donation_history');
-        CRUD::column('health_notes');
-        CRUD::column('next_eligible_donation_date');
-        CRUD::column('medical_conditions');
-        CRUD::column('last_health_check_date');
-        CRUD::column('donations_in_last_2_years');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -112,10 +104,6 @@ class DonorCrudController extends CrudController
         ]);
         CRUD::field('last_donation_date');
         CRUD::field('user_id');
-        CRUD::field('health_notes');
-        CRUD::field('next_eligible_donation_date');
-        CRUD::field('last_health_check_date');
-        CRUD::field('donations_in_last_2_years')->type('number');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

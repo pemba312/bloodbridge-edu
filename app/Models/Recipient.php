@@ -28,6 +28,7 @@ class Recipient extends Model
         'contact',
         'user_id',
         'address',
+        'blood_group',
         'medical_notes'
     ];
     protected $casts = [
